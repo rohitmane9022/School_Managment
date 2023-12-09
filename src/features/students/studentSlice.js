@@ -82,5 +82,5 @@ export const studentSlice = createSlice({
     }
   }
 })
-// export const { dd } = postSlice.actions;
+
 export default studentSlice.reducer;

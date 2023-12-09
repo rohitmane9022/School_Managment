@@ -29,12 +29,16 @@ export default function Dashboard() {
   )
   return <div>
     <h3>School Management System</h3>
-    {status === "loading" && <div className="loader"></div>}
-
+    {status === "loading" ?<div>Loading Please wait...</div>:(
+      <div>
+        
     <p>Total Students : {students.length}</p>
     <p>Average Attendance : {avgAttendance}</p>
     <p>Average Marks : {avgMarks}/500</p>
     <p>Top Student : {topper?.name} of class {topper?.grade}</p>
+      </div>
+    )}
+
   </div>
 }
 

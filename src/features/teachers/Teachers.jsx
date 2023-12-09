@@ -73,7 +73,7 @@ export default function Teachers() {
 
         <button>Submit</button>
       </form>
-      {status === "loading" && <div className="loader"></div>}
+      {status === "loading" && <div>Loading Please wait...</div>}
       <ul>
         {teachers?.map((item) => (
           <ListItem item={item} type={"teacher"} />

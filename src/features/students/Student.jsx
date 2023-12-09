@@ -101,7 +101,7 @@ export default function Students() {
         />
         <button>Submit</button>
       </form>
-      {status === "loading" && <div className="loader"></div>}
+      {status === "loading" && <div>Loading Please wait...</div>}
       <ul>
         <h3>List of Students</h3>
         {students?.map((item) => (
