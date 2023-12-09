@@ -6,13 +6,6 @@
   padding: 0;
 }
 
-.logo {
-  font-weight: 800;
-  
-}
-
-
-
 header {
   display: flex;
   justify-content: space-between;

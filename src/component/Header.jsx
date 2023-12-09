@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header(){
   return <>
-    <div className="logo">School</div>
+    <div style={{fontSize:"20px"}}>Mumbai School</div>
     <nav>
       <NavLink to='/'>Home</NavLink>
       <NavLink to='/teachers'>Teachers</NavLink>

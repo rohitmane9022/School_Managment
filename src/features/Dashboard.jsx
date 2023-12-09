@@ -28,7 +28,7 @@ export default function Dashboard() {
     }, []
   )
   return <div>
-    <h3>School Management System</h3>
+    <h3>Mumbai School Management System</h3>
     {status === "loading" ?<div>Loading Please wait...</div>:(
       <div>
         
