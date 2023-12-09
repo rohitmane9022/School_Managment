@@ -32,6 +32,8 @@ export default function Teachers() {
   return (
     <div>
       <h3>Teachers Page</h3>
+      <div style={{display:"flex", justifyContent:"space-evenly",margin:"0 155px"}}>
+      <div style={{display:"flex", flexDirection:"column"}}>
       <form onSubmit={onSubmitHandler}>
         <input
           type="text"
@@ -73,12 +75,16 @@ export default function Teachers() {
 
         <button>Submit</button>
       </form>
+      </div>
+      <div>
       {status === "loading" && <div>Loading Please wait...</div>}
       <ul>
         {teachers?.map((item) => (
           <ListItem item={item} type={"teacher"} />
         ))}
       </ul>
+      </div>
+    </div>
     </div>
   );
 }

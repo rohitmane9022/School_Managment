@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 
 export default function ListItem({ item, type, inClassView }) {
   return (
-    <li key={item._id}>
-      <NavLink to={`/${type}/${item._id}`}>
+    <li key={item._id} >
+      <NavLink to={`/${type}/${item._id}`} style={{listStyleType:"none",textDecoration:"none"}}>
 
     
-      <span>{item.name}</span> </NavLink>
+      <span >{item.name}</span> </NavLink>
       {item.marks && (
         <>
         <span>class: {item.grade}</span>

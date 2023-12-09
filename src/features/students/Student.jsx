@@ -32,6 +32,8 @@ export default function Students() {
   return (
     <div>
       <h3>Students Page</h3>
+      <div style={{display:"flex", justifyContent:"space-evenly",margin:"0 155px"}}>
+      <div style={{display:"flex", flexDirection:"column"}}>
       <form onSubmit={onSubmitHandler}>
         <input
           type="text"
@@ -68,7 +70,7 @@ export default function Students() {
 
         <input
           type="number"
-          placeholder="grade/class"
+          placeholder="class number/standard"
           name="grade"
           id=""
           min={1}
@@ -101,6 +103,8 @@ export default function Students() {
         />
         <button>Submit</button>
       </form>
+      </div>
+      <div>
       {status === "loading" && <div>Loading Please wait...</div>}
       <ul>
         <h3>List of Students</h3>
@@ -108,6 +112,8 @@ export default function Students() {
           <ListItem item={item} type={"student"} />
         ))}
       </ul>
+      </div>
+      </div>
     </div>
   );
 }
