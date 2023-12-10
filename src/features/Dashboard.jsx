@@ -35,7 +35,7 @@ export default function Dashboard() {
     <p>Total Students : {students.length}</p>
     <p>Average Attendance : {avgAttendance}</p>
     <p>Average Marks : {avgMarks}/500</p>
-    <p>Top Student : {topper?.name} of class {topper?.grade}</p>
+    <h2>Top Student : {topper?.name} of class {topper?.grade}</h2>
       </div>
     )}
 
